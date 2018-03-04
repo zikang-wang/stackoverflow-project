@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Permutation00 extends Permutation {
+public class Permutation00 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
     List<String> permute(String str) {
         if (str == null) {
@@ -50,7 +50,6 @@ public class Permutation00 extends Permutation {
         }
     }
 
-    @Override
     public void run(String testStr) {
         for (String s : permute(testStr))
             System.out.println(s);
