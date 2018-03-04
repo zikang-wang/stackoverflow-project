@@ -1,6 +1,6 @@
 package permutation;
 
-public class Permutation23 extends Permutation {
+public class Permutation23 {
     // https://stackoverflow.com/questions/11915026/permutations-of-a-string-using-iteration
     public void combString(String s) {
         // Print initial string, as only the alterations will be printed later
@@ -37,7 +37,6 @@ public class Permutation23 extends Permutation {
         a[j] = temp;
     }
 
-    @Override
     public void run(String testStr) {
         combString(testStr);
     }

@@ -2,7 +2,7 @@ package permutation;
 
 import java.util.ArrayList;
 
-public class Permutation20 extends Permutation {
+public class Permutation20 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
     ArrayList al = new ArrayList();
 
@@ -35,7 +35,6 @@ public class Permutation20 extends Permutation {
         }
     }
 
-    @Override
     public void run(String testStr) {
         findPermutation(testStr);
         for (Object o : al)

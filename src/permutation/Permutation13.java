@@ -1,6 +1,6 @@
 package permutation;
 
-public class Permutation13 extends Permutation {
+public class Permutation13 {
     // https://stackoverflow.com/questions/361/generate-list-of-all-possible-permutations-of-a-string
     private void permutation(String str) {
         char[] stringArray = str.toCharArray();
@@ -35,7 +35,6 @@ public class Permutation13 extends Permutation {
         printPermutation(string, loopCounter, length, ++indexFrom, ++indexTo);
     }
 
-    @Override
     public void run(String testStr) {
         permutation(testStr);
     }

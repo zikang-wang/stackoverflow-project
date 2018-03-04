@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
-public class Permutation17 extends Permutation {
+public class Permutation17 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
     public Set<String> permutate(String s){
         Queue<String> permutations = new LinkedList<String>();
@@ -25,7 +25,6 @@ public class Permutation17 extends Permutation {
         return v;
     }
 
-    @Override
     public void run(String testStr) {
         for (String s : permutate(testStr))
             System.out.println(s);

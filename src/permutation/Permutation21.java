@@ -2,7 +2,7 @@ package permutation;
 
 import java.util.Stack;
 
-public class Permutation21 extends Permutation {
+public class Permutation21 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
     /*
      * eg: abc =>{a,bc},{b,ac},{c,ab}
@@ -37,7 +37,6 @@ public class Permutation21 extends Permutation {
         }
     }
 
-    @Override
     public void run(String testStr) {
         nonRecpermute("", testStr);
     }

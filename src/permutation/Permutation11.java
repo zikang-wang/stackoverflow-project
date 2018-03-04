@@ -1,6 +1,6 @@
 package permutation;
 
-public class Permutation11 extends Permutation {
+public class Permutation11 {
     // https://stackoverflow.com/questions/361/generate-list-of-all-possible-permutations-of-a-string
 
     public void permute(int level, String permuted,
@@ -20,7 +20,6 @@ public class Permutation11 extends Permutation {
         }
     }
 
-    @Override
     public void run(String testStr) {
         boolean used[] = new boolean[testStr.length()];
         permute(0, "", used, testStr);

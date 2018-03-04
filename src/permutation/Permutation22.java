@@ -2,7 +2,7 @@ package permutation;
 
 import java.util.ArrayList;
 
-public class Permutation22 extends Permutation {
+public class Permutation22 {
     // https://stackoverflow.com/questions/46260552/recursively-computing-all-possible-permutations-of-a-string-java
     public ArrayList<String> computeAllPossiblePermutations(String str) {
         ArrayList<String> perms = new ArrayList<>();
@@ -22,7 +22,6 @@ public class Permutation22 extends Permutation {
         return perms;
     }
 
-    @Override
     public void run(String testStr) {
         for (String s : computeAllPossiblePermutations(testStr))
             System.out.println(s);

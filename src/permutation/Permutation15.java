@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Permutation15 extends Permutation {
+public class Permutation15 {
     // https://stackoverflow.com/questions/11915026/permutations-of-a-string-using-iteration
     public List<String> permutations(String string) {
         List<String> permutations = new LinkedList<>();
@@ -47,7 +47,6 @@ public class Permutation15 extends Permutation {
         }
     }
 
-    @Override
     public void run(String testStr) {
         for (String s : permutations(testStr))
             System.out.println(s);

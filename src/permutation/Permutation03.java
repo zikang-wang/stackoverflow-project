@@ -1,6 +1,6 @@
 package permutation;
 
-public class Permutation03 extends Permutation {
+public class Permutation03 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
 
     public void doPerm(StringBuffer str, int index){
@@ -24,7 +24,6 @@ public class Permutation03 extends Permutation {
         str.setCharAt(pos2, t1);
     }
 
-    @Override
     public void run(String testStr) {
         doPerm(new StringBuffer(testStr), testStr.length());
     }

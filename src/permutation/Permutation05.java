@@ -2,7 +2,7 @@ package permutation;
 
 import java.util.Arrays;
 
-public class Permutation05 extends Permutation {
+public class Permutation05 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
     private void swap(String[] ourarray, int right, int left) {
         String temp = ourarray[right];
@@ -29,7 +29,6 @@ public class Permutation05 extends Permutation {
         }
     }
 
-    @Override
     public void run(String testStr) {
         String[] ourArray = testStr.split("");
         permute(ourArray, ourArray.length);

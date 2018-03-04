@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public class Permutation06 extends Permutation {
+public class Permutation06 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
 
     public static void permute(String s) {
@@ -61,7 +61,6 @@ public class Permutation06 extends Permutation {
         return list;
     }
 
-    @Override
     public void run(String testStr) {
         permute(testStr);
     }

@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class Permutation07 extends Permutation {
+public class Permutation07 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
 
     Set<String> permutations;
@@ -46,7 +46,6 @@ public class Permutation07 extends Permutation {
         }
     }
 
-    @Override
     public void run(String testStr) {
         Set<String> result = permutation(testStr);
         Iterator<String> it = result.iterator();

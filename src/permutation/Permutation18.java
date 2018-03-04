@@ -1,6 +1,6 @@
 package permutation;
 
-public class Permutation18 extends Permutation {
+public class Permutation18 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
     public int facts(int x){
         int sum = 1;
@@ -51,7 +51,6 @@ public class Permutation18 extends Permutation {
         }
     }
 
-    @Override
     public void run(String testStr) {
         permutation(testStr);
     }

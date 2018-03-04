@@ -2,7 +2,7 @@ package permutation;
 
 import java.util.Vector;
 
-public class Permutation12 extends Permutation {
+public class Permutation12 {
     // https://stackoverflow.com/questions/361/generate-list-of-all-possible-permutations-of-a-string
     public Vector<String> permStr(String str){
 
@@ -25,7 +25,6 @@ public class Permutation12 extends Permutation {
         return newEndStrs;
     }
 
-    @Override
     public void run(String testStr) {
         for (String s : permStr(testStr))
             System.out.println(s);

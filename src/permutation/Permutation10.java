@@ -3,7 +3,7 @@ package permutation;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Permutation10 extends Permutation {
+public class Permutation10 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
 
     public static ArrayList<String> permute(String s) {
@@ -39,7 +39,6 @@ public class Permutation10 extends Permutation {
         return perms;
     }
 
-    @Override
     public void run(String testStr) {
         for (String s : permute(testStr))
             System.out.println(s);

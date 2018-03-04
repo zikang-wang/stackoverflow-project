@@ -3,7 +3,7 @@ package permutation;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Permutation14 extends Permutation {
+public class Permutation14 {
     // https://stackoverflow.com/questions/361/generate-list-of-all-possible-permutations-of-a-string
     public Set<String> concat(String c, Set<String> lst) {
         HashSet<String> ret_set = new HashSet<String>();
@@ -25,7 +25,6 @@ public class Permutation14 extends Permutation {
         return set;
     }
 
-    @Override
     public void run(String testStr) {
         for (String s : all_perm(testStr))
             System.out.println(s);

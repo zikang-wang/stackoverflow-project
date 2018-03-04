@@ -1,6 +1,6 @@
 package permutation;
 
-public class Permutation09 extends Permutation {
+public class Permutation09 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
 
     public void permute(char[] ary, int startIndex, int endIndex) {
@@ -21,7 +21,6 @@ public class Permutation09 extends Permutation {
         ary[y] = temp;
     }
 
-    @Override
     public void run(String testStr) {
         permute(testStr.toCharArray(), 0, testStr.length()-1);
     }

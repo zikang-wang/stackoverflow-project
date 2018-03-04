@@ -3,7 +3,7 @@ package permutation;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Permutation04 extends Permutation {
+public class Permutation04 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
     public Set<String> generatePerm(String input)
     {
@@ -34,7 +34,6 @@ public class Permutation04 extends Permutation {
         return set;
     }
 
-    @Override
     public void run(String testStr) {
         for (String s : generatePerm(testStr))
             System.out.println(s);

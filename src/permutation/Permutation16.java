@@ -1,10 +1,9 @@
 package permutation;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-public class Permutation16 extends Permutation {
+public class Permutation16 {
     // https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
     private static List<String> permutations(String s) {
         // TODO Auto-generated method stub
@@ -23,7 +22,6 @@ public class Permutation16 extends Permutation {
         return combinations;
     }
 
-    @Override
     public void run(String testStr) {
         for (String s : permutations(testStr))
             System.out.println(s);
